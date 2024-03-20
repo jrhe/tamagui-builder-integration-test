@@ -1,5 +1,6 @@
 # Run in apps/next
 
+```
 👾 ❯ npm init builder.io@latest
 ┌   Integrate Builder.io   v1.0.1
 │
@@ -19,3 +20,4 @@
 ◆  Next Steps
 │
 ●  npm run dev
+```
