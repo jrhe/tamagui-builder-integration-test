@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const { withTamagui } = require('@tamagui/next-plugin')
 const { join } = require('path')
+const BuilderDevTools = require('@builder.io/dev-tools/next')
 
 const boolVals = {
   true: true,
@@ -32,6 +33,7 @@ Remove this log in next.config.js.
 `)
 
 const plugins = [
+  BuilderDevTools({}),
   withTamagui({
     config: '../../packages/config/src/tamagui.config.ts',
     components: ['tamagui', '@my/ui'],
